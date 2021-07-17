@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form </title>
+
+    <link rel="stylesheet" href="student_reg_css.css">
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h1> Student Registration Form </h1>
+        <hr>
+    </header>
+    <div  class="container">
+        <form action="#" target="_blank" autocomplete="on">
+
+            <div>
+                <h2>Student Register Form :</h2>
+            </div>
+            <div>
+                <label for="name">Student's Name * : </label>
+                <input type="text" id="name" name="name" autofocus required>
+            </div>
+            <div>
+
+                <label for="reg_no">Registration Id * : </label>
+                <input type="text" id="reg_no" name="reg_no" maxlength="12" required>
+            </div>
+            <div>
+
+                <label for="birthday">Birthday * : </label>
+                <input type="date" id="birthday" name="birthday" required>
+            </div>
+            <div>
+                <label for="course"> Course * : </label>
+                <input list="course" name="courses" >
+                <datalist id="course">
+                    <option value="MCA">MCA</option>
+                    <option value="M.TECH">M.TECH</option>
+                    <option value="B.TECH">B.TECH</option>
+                    <option value="B.SC">B.SC</option>
+                    <option value="B.COM">B.COM</option>
+                    <option value="ARTS">ARTS</option>
+
+                </datalist>
+            </div>
+            <div>
+
+                <label for="email">Email * </label>
+                <input type="email" id="email" name="email" required>
+
+            </div>
+            <div>
+                <span> Gender: </span>
+                <input type="radio" id="Male" name="gender_detail" value="Male">
+                <label for="Male">MALE </label>
+                <input type="radio" id="Female" name="gender_detail" value="Female">
+                <label for="Female">FEMALE </label>
+                <input type="radio" id="Others" name="gender_detail" value="Others">
+                <label for="Others">OTHERS </label>
+            </div>
+
+            <div>
+
+                <label for="state">State: </label>
+                <input type="text" id="state" name="state" required>
+            </div>
+            <div>
+
+                <label for="district">District : </label>
+                <input type="text" id="district" name="district" required>
+            </div>
+
+            <div>
+                <label for="city">City : </label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div>
+                <label for="pin">PIN CODE : </label>
+                <input type="number" name="pincode" id="pin" min="751000" max="752000" required>
+            </div>
+            <div>
+
+                <p> <label for="address">Address : </label> </p>
+                <textarea id="address" name="address" cols="10" rows="4"> </textarea>
+            </div>
+            
+            <div>
+                <div class="submitform">
+                    <input type="submit" value="SUBMIT">
+    
+                </div>
+                <div class="submitform">
+                    <input type="reset">
+                </div>
+            </div>
+            
+        </form>
+
+    </div>
+
+</body>
+
+</html>

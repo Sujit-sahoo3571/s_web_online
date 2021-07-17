@@ -1,0 +1,72 @@
+body{
+    font-family: 'Sofia', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    text-align: center;
+    border-bottom: 5px solid dodgerblue;
+    
+}
+nav{
+    background-color: #474747;
+    margin-top: 5px;
+    border: 1px solid white;
+    text-align: left;
+   
+}
+ol{
+    list-style-type: none;
+}
+li  {
+display: inline-block;
+}
+a{
+    text-decoration: none;
+    border: 3px solid green;
+    background-color: white;
+    padding: 5px;
+  
+}
+a:hover{
+    background-color: green;
+    color: white;
+    
+}
+img{
+    max-width: 200px;
+    max-height: 160px;
+}
+
+.container{
+    /* border: 5px solid green; */
+   margin: 10px;
+   padding: 10px;
+   
+}
+.foodpic {
+     border: 5px solid dodgerblue;
+     display: inline-block;
+    margin-right: 5px;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.foodmsg {
+    /* border: 5px solid dodgerblue; */
+    display: inline-block;
+   margin-right: 5px;
+   max-width: 700px;
+   /* max-height: 200px; */
+   margin-left: 5px;
+   padding: 10px;
+
+}
+footer{
+    background-color: #474747;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+
+}

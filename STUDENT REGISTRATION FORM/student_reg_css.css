@@ -1,0 +1,25 @@
+div{
+    padding: 5px;
+}
+
+.submitform{
+    float: left;
+}
+
+header, h2{
+    text-align: center;
+}
+.container{
+    padding-left: 50px;
+    border: 3px solid dodgerblue;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 200px;
+    background: #f23145 url("../pics/Aiface.jpg") no-repeat right top ;
+    /* background-image: url("F:\\Internship Web Development\\images\\Aiface.jpg"); */
+    background-size: cover;
+    font-size: larger;
+    color: white;
+    font-family: 'Sofia', cursive, Verdana, Geneva, Tahoma, sans-serif;
+    
+}
