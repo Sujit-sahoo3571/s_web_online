@@ -5,17 +5,16 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
-
 nav ol {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1rem 0;
   background-color: #FF4500;
 }
@@ -38,30 +37,25 @@ nav ol li a {
 nav ol li:hover a {
   color: teal;
 }
-
-nav {
-  position: relative;
-  background-color: #FF4500;
-}
-
-nav .hamburger {
-  display: none;
-  position: absolute;
-  top: 50%;
-  right: 1.5rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  height: 40px;
-  width: 40px;
-}
-
-nav .hamburger img {
-  height: 100%;
-  width: 100%;
-}
-
-nav .burgerMenu {
-  display: none;
+nav{
+    position: relative;
+    background-color:#FF4500;    
+    .hamburger{
+        display: none;
+        position: absolute;
+        top: 50%; 
+        right:1.5rem;               
+        transform: translateY(-50%);        
+        height: 40px;
+        width: 40px;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .burgerMenu{
+        display: none;
+    }
 }
 
 header {
@@ -96,16 +90,16 @@ header::first-letter {
   max-width: 300px;
   border-radius: 10px;
   -webkit-box-shadow: 0px 4px 20px -10px rgba(0, 0, 0, 0.616);
-  box-shadow: 0px 4px 20px -10px rgba(0, 0, 0, 0.616);
+          box-shadow: 0px 4px 20px -10px rgba(0, 0, 0, 0.616);
 }
 
 .container .foodpic img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   border-radius: inherit;
 }
 
@@ -115,15 +109,15 @@ header::first-letter {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   padding: 2rem;
 }
 
@@ -148,67 +142,56 @@ footer {
   padding: 1rem;
 }
 
-@media only screen and (max-width: 800px) {
-  nav ol li {
-    display: none;
-  }
-  nav {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding: 1rem 0;
-    z-index: 10;
-  }
-  nav .hamburger {
-    display: block;
-  }
-  nav .burgerMenu {
-    min-width: 100%;
-    position: absolute;
-    top: 0%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    z-index: 10;
-    padding: 1rem;
-    border-radius: 0 0 10px 10px;
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
-    -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.205);
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.205);
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: all 350ms ease-in-out;
-    transition: all 350ms ease-in-out;
-  }
-  nav .burgerMenu li {
-    list-style: none;
-    padding: 0 2rem;
-    font-family: 'Merienda', cursive;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 1rem 0;
-    white-space: nowrap;
-  }
-  nav .burgerMenu li a {
-    text-decoration: none;
-    color: black;
-  }
-  nav .activeBurgMenu {
-    top: 100%;
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: all 350ms ease-in-out;
-    transition: all 350ms ease-in-out;
-  }
+@media only screen and (max-width: 800px) {   
+    nav ol li{
+        display: none;          
+    }
+    nav {    
+        position:sticky;    
+        top:0;
+        width: 100%;
+        padding: 1rem 0; 
+        z-index: 10;     
+        .hamburger{
+        display: block;        
+    }
+    .burgerMenu{
+        min-width: 100%;
+        // background-color: blue;
+        position: absolute;
+        top:0%;        
+        display: flex;
+        align-items: center;     
+        flex-flow: column;
+        z-index: 10;
+        padding: 1rem;
+        border-radius: 0 0 10px 10px;
+        backdrop-filter: blur(20px);
+        box-shadow:10px 10px 20px rgba(0, 0, 0, 0.205);
+        visibility:hidden;
+        opacity: 0;
+        transition: all 350ms ease-in-out;
+        li{           
+            list-style: none;
+            padding: 0 2rem;
+            font-family: 'Merienda', cursive;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 1rem 0;            
+            white-space: nowrap;
+            a{
+                text-decoration: none;
+                color:black;
+            }
+        }
+    }
+    .activeBurgMenu{
+        top: 100%;
+        visibility:visible;
+        opacity: 1;
+        transition: all 350ms ease-in-out;
+    }
+}
   nav ol li {
     font-size: 1rem;
     padding: 0 1rem;
@@ -219,8 +202,8 @@ footer {
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-flow: column;
-    flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
   }
   .container .foodpic {
     margin: auto;
@@ -236,4 +219,3 @@ footer {
     font-size: 1.2em;
   }
 }
-/*# sourceMappingURL=style.css.map */
