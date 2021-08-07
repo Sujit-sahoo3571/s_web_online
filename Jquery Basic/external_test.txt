@@ -1,0 +1,6 @@
+<h2>jQuery and AJAX is FUN!!!</h2>
+<p id="p1">This is some text in a paragraph.</p>
+<input type="text" id="enter-value1">
+<button id="bar1-cool" > submit </button>
+<p> on submit pressing is not working  here :)</p>
+<p id = "bar1-cool-p " ></p> 

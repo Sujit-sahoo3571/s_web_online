@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student registration form </title>
+    <link rel="stylesheet" href="studentt_form.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+</head>
+
+<body>
+  
+        <div class="container ">
+            <div class="form-block">
+            <h1>student registration form </h1>
+            <form action="#" autocomplete="on" name = "myform" onsubmit="return valid_check()">
+                <div class="row">
+                <div class="form-group col-sm-6 ">
+                    <label for="fname">First Name * </label>
+                    <input type="text" class="form-control" id="fname" name="fname"  >
+                    <span id="f"></span>
+                </div>
+                <div class="form-group col-sm-6 ">
+                    <label for="lname">Last Name * </label>
+                    <input type="text" class="form-control" id="lname" name="lname"  >
+                    <span id="l"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-12">
+                    <label for="email">Email * </label>
+                    <input type="email" class="form-control" id="email" name="email"  >
+                    <span id="e"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6 ">
+                    <label for="Company">Company * </label>
+                    <input type="text" class="form-control" id="Company" name="Company"  >
+                    <span id="c"></span>
+                </div>
+                <div class="form-group col-sm-6 ">
+                    <label for="Department">Department * </label>
+                    <input type="text" class="form-control" id="Department" name="Department"  >
+                    <span id="d"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6 ">
+                    <label for="Country">Country * </label>
+                    <input type="text" class="form-control" id="Country" name="Country"  >
+                    <span id="t"></span>
+                </div>
+                <div class="form-group col-sm-6 ">
+                    <label for="state">state * </label>
+                    <input type="text" class="form-control" id="state" name="state"  >
+                    <span id="s"></span>
+                </div>
+            </div>
+            <!-- <div class="row ">
+                <button type="button" class="btn btn-outline-primary" name="Submit" value="submit">submit</button>
+            </div> -->
+            <div class="row mx-5 pb-4" >
+                <input type="submit" class="btn btn-primary btn-lg" onclick="valid_check()"> 
+                <!-- onclick="valid_check()" -->
+            </div>
+
+            <p id="demo"></p>
+            
+            <p id="cool"></p>
+
+            </form>
+
+        </div>
+        </div>
+
+        <p id="msg"> </p>
+<script src="student_gmail_js.js" ></script>
+<!-- bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- bootstrap -->
+
+</body>
+
+</html>
